@@ -296,7 +296,7 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -320,6 +320,17 @@
               />
             </div>
             <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Subject</label>
+              <input
+                required
+                placeholder="Enter Your Subject"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="subject"
+              />
+            </div>
+            <div class="contact__form-field">
               <label class="contact__form-label" for="message">Message</label>
               <textarea
                 required
@@ -331,7 +342,7 @@
                 id="message"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">
+            <button id="sendBtn" type="submit" class="btn btn--theme contact__btn">
               Send
             </button>
           </form>
@@ -402,5 +413,9 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="/email.js"></script>
+
   </body>
 </html>
