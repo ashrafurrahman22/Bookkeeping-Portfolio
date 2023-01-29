@@ -296,7 +296,7 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form class="contact__form">
+          <form id="contactForm" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -313,7 +313,7 @@
               <input
                 required
                 placeholder="Enter Your Email"
-                type="text"
+                type="email"
                 class="contact__form-input"
                 name="email"
                 id="email"
@@ -342,7 +342,7 @@
                 id="message"
               ></textarea>
             </div>
-            <button id="sendBtn" type="submit" class="btn btn--theme contact__btn">
+            <button type="submit" class="btn btn--theme contact__btn">
               Send
             </button>
           </form>

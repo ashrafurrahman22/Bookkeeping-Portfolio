@@ -1,5 +1,9 @@
-var btn = document.getElementById("sendBtn");
-btn.addEventListener('click', function(e){
+// var btn = document.getElementById("sendBtn");
+
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener('submit', function(e){
   e.preventDefault()
   console.log("clicked")
 
@@ -10,6 +14,7 @@ btn.addEventListener('click', function(e){
 
   var body = 'Name: ' +name + '<br/> Email: ' + email + "<br/> Subject:" + " " + subject + '<br/> Message: ' + " " + message; 
 
+
   Email.send({
     Host : "smtp.elasticemail.com",
     Username : "ashrafur745@gmail.com",
@@ -19,6 +24,6 @@ btn.addEventListener('click', function(e){
     Subject : "Message From Portfolio Website",
     Body : body
 }).then(
-  message => alert(message)
+  message => alert("Successfully Send")
 );
 })
