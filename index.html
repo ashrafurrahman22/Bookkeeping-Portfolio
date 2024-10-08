@@ -480,13 +480,32 @@
     </footer>
 
     <script src="./index.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/email.js"></script>
+
+
+     <!-- --------------emailjs integration --------------- -->
+     <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+ </script>
+ <script type="text/javascript">
+ (function(){
+   emailjs.init({
+     publicKey: "Rqmrny0TQkF3CH8I7",
+   });
+ })();
+ </script>
+    <script src="/script.js"></script>
+     
+     <!-- --------------emailjs integration --------------- -->
+
+   
+
+
     <script>
       // Get the current year
       const year = new Date().getFullYear();
       // Set the year in the footer
       document.getElementById("year").textContent = year;
     </script>
+
   </body>
 </html>
